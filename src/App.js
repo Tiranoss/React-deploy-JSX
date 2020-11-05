@@ -1,19 +1,24 @@
 import React from 'react'
+import image from './Photos/image.png'
+import mangas from './Photos/mangas.png'
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
-        <div style={{border: 'solid 1px black', maxWidth: '100vw'}}>
-          <h1 className="title red">Your name here</h1>
+        <div className="containerHeader">
+          <h1 className="title">BILEL THE KING</h1>
           <br />
-          <img src="/imageInSrc.jpg" />
+          <div className="logos">
+          <img src={image} />
           <br />
-          <img src="/imageInPublic.jpg" />
+          <img src={mangas} />
+          </div>
         </div>
-        <video width={320} height={240} controls>
-          <source src="myVideo.mp4" type="video/mp4" />
-        </video>
+        <div className="videos">
+        <iframe width="664" height="480" src="https://www.youtube.com/embed/i1IKnWDecwA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
   );
 }
